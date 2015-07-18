@@ -1,0 +1,194 @@
+/* line 5, C:/Users/migue/Proyectos/Angular/css/style.sass */
+body {
+  background-color: #e7d6c4; }
+
+/* line 7, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: #936357;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 384px) {
+    /* line 7, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    .header {
+      height: 250px; } }
+
+/* line 16, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.find {
+  text-align: center;
+  color: #936357;
+  display: flex;
+  justify-content: center;
+  flex-flow: column; }
+  /* line 22, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  .find h3 {
+    color: white; }
+  @media screen and (max-width: 384px) {
+    /* line 16, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    .find {
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 0px;
+      margin-top: 5%; } }
+
+/* line 29, C:/Users/migue/Proyectos/Angular/css/style.sass */
+input {
+  width: 500px;
+  font-size: 1.5em;
+  border: none; }
+  @media screen and (max-width: 384px) {
+    /* line 29, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    input {
+      width: 100%; } }
+
+/* line 35, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  @media screen and (max-width: 384px) {
+    /* line 35, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    .form {
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center; } }
+  /* line 47, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  .form a {
+    text-decoration: none;
+    color: white;
+    margin-left: 9px;
+    font-size: 1.2em;
+    border: 1px solid #e7d6c4;
+    border-radius: 25px;
+    padding: 6px 12px; }
+    @media screen and (max-width: 384px) {
+      /* line 47, C:/Users/migue/Proyectos/Angular/css/style.sass */
+      .form a {
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-left: 0px;
+        border-radius: 0px;
+        padding-bottom: 0px; } }
+
+/* line 62, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.option {
+  width: 88px;
+  padding: 0;
+  margin-right: 9px;
+  background-color: transparent;
+  color: #e7d6c4; }
+  @media screen and (max-width: 384px) {
+    /* line 62, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    .option {
+      width: 100%;
+      margin-right: 0px; } }
+
+/* line 72, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-flow: wrap; }
+
+/* line 81, C:/Users/migue/Proyectos/Angular/css/style.sass */
+figure {
+  background-color: white;
+  box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.35);
+  margin: 15px;
+  position: relative; }
+  /* line 86, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  figure img {
+    padding: 10px;
+    transition: transform 0.4s;
+    max-width: 100%;
+    position: relative; }
+    /* line 91, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    figure img:hover {
+      transition: transform 0.4s; }
+    @media screen and (max-width: 384px) {
+      /* line 86, C:/Users/migue/Proyectos/Angular/css/style.sass */
+      figure img {
+        padding: 0; } }
+
+/* line 97, C:/Users/migue/Proyectos/Angular/css/style.sass */
+figcaption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: black;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  transition: opacity 0.4s;
+  opacity: 0;
+  color: white;
+  background-color: black; }
+  /* line 115, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  figcaption:hover {
+    transition: opacity 0.4s;
+    opacity: 0.60; }
+  /* line 118, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  figcaption a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: transform 0.4s; }
+    /* line 123, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    figcaption a:hover {
+      transform: translateY(-10px);
+      color: #936357; }
+  /* line 126, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  figcaption p {
+    text-align: center; }
+
+/* line 128, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+/* line 132, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.more {
+  display: flex;
+  align-content: center;
+  justify-content: space-around; }
+  /* line 136, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  .more a {
+    color: #936357;
+    font-size: 2.9em;
+    text-decoration: none;
+    transition: transform 0.4s;
+    align-self: center; }
+    /* line 142, C:/Users/migue/Proyectos/Angular/css/style.sass */
+    .more a:hover {
+      transform: translateY(-8px);
+      color: white; }
+
+/* line 145, C:/Users/migue/Proyectos/Angular/css/style.sass */
+#up {
+  padding-left: 70%; }
+
+/* line 149, C:/Users/migue/Proyectos/Angular/css/style.sass */
+.params {
+  display: flex;
+  justify-content: flex-start;
+  color: #936357;
+  margin-left: 15%; }
+  /* line 154, C:/Users/migue/Proyectos/Angular/css/style.sass */
+  .params select {
+    color: #936357;
+    width: 45px; }
+
+/*# sourceMappingURL=style.css.map */

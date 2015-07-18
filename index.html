@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="Effect.js" type="text/javascript"></script>
+  
+ 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+ 
+  <title>Findstam</title>
+</head>
+<body ng-controller="mainController" ng-init="input='Landscape'">
+<div class="mainContainer">
+    <div class="header">
+        <div class="find">
+          <h3>Findstam</h3>
+          <div class="form">
+                <select class="option" 
+                      ng-model="select" 
+                      data-ng-options = "opt for opt in options" 
+                      ng-change="getimages()">
+                </select>
+                <input type="text" ng-model="input" ng-show="bar">
+                <a href="#more" id="top" class="btn" ng-click="getimages()" >
+                     <i class="ion-search"></i> Search 
+                </a>
+          </div>
+          <br>
+        </div>
+    </div>     
+    <br>
+    <div class="params">
+        <span>
+               Number of items 
+                <select  class="option" 
+                        ng-model="count" 
+                        data-ng-options = "q for q in quantitys" 
+                        ng-change="getimages()">
+                </select>
+    </span>
+    </div>
+    <div class="content">
+       
+        <div  id="tiles" ng-repeat="p in pics  ">
+            <figure id="fig">
+                <img 
+                     ng-src="{{p.images.low_resolution.url}}" 
+                     class="img-responsive thumbnail"
+                     title="{{p.caption.text}}"
+                     >
+                <figcaption>
+                    <a href="{{'https://instagram.com/'+p.caption.from.username}}" target="_blank">
+                       <h4>{{p.caption.from.username}}</h4> 
+                    </a>
+    
+                    <br>
+                    <div class="metadata">
+                        <a href="{{p.images.standard_resolution.url}}" target="_blank">
+                            <i class="fa fa-download fa-2x"></i>
+                        </a>
+                        <a href="{{p.link}}" target="_blank">
+                            <i class="fa fa-external-link fa-2x"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fa fa-heart-o fa-2x"></i>{{p.likes.count}}
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div> 
+    <span class="more">
+         <a  href="#end" id="more"  ng-click="getMore()" ng-hide="button" ><i class="ion-plus-circled"></i>          </a>   
+         <a  href="#top" id="up"   ng-hide="button" ><i class="ion-arrow-up-b"></i></a>           
+    </span>
+    <div id="end"></div>
+</div>
+
+<!--Angular js files-->
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

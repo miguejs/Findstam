@@ -1,0 +1,156 @@
+//Variables
+$pColor:#936357
+$sColor:#e7d6c4
+$mate: #1d1f21
+body
+    background-color: $sColor    
+.header
+    width: 100%
+    height: 150px
+    background-color: $pColor
+    display: flex
+    align-items: center
+    justify-content: center
+    @media screen and (max-width:384px) 
+        height: 250px
+.find
+    text-align: center
+    color: $pColor
+    display: flex
+    justify-content: center
+    flex-flow: column
+    h3
+        color: white
+    @media screen and (max-width:384px) 
+        padding-bottom: 0px
+        padding-top: 0px
+        margin-bottom: 0px
+        margin-top: 5%
+input
+    width: 500px
+    font-size: 1.5em
+    border: none
+    @media screen and (max-width:384px) 
+        width: 100%
+.form
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    @media screen and (max-width:384px) 
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        align-items: center  
+        
+    a
+        
+        text-decoration: none
+        color: white
+        margin-left: 9px
+        font-size: 1.2em
+        border: 1px solid $sColor
+        border-radius: 25px
+        padding: 6px 12px
+        @media screen and (max-width:384px) 
+            padding-right: 100px
+            padding-left: 100px
+            margin-left: 0px
+            border-radius: 0px
+            padding-bottom: 0px
+.option
+    width: 88px
+    padding: 0
+    margin-right:9px
+    background-color: transparent
+    color: $sColor
+    @media screen and (max-width:384px) 
+        
+        width: 100%
+        margin-right:0px
+.content
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
+    flex-flow: wrap
+
+    
+//Efecto 2
+figure
+    background-color: white
+    box-shadow:7px 7px 18px 0px rgba(50, 50, 50, 0.35);
+    margin: 15px
+    position: relative
+    img
+        padding: 10px
+        transition: transform 0.4s
+        max-width: 100%;
+        position: relative
+        &:hover
+            transition: transform 0.4s
+        @media screen and (max-width:384px) 
+            padding: 0
+            
+
+figcaption 
+    position: absolute
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    flex-flow: column
+    color: black
+    height: 100%
+    width: 100%
+    bottom: 0
+    padding:0
+    margin: 0
+    text-align: center
+    transition: opacity 0.4s
+    opacity: 0
+    color: white
+    background-color: black
+    &:hover
+        transition: opacity 0.4s
+        opacity: 0.60
+    a
+        text-decoration: none
+        color: white
+        padding: 10px
+        transition: transform 0.4s
+        &:hover
+            transform: translateY(-10px)
+            color: $pColor
+    p
+        text-align: center
+.metadata
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+.more
+    display: flex
+    align-content: center
+    justify-content: space-around
+    a 
+        color: $pColor
+        font-size: 2.9em
+        text-decoration: none
+        transition: transform 0.4s
+        align-self: center
+        &:hover
+            transform: translateY(-8px)
+            color: white
+#up
+    padding-left: 70%
+
+    
+.params
+    display: flex
+    justify-content: flex-start
+    color: $pColor
+    margin-left: 15%
+    select
+        color: $pColor
+        width: 45px
