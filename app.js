@@ -57,18 +57,12 @@ app.controller('mainController', function ($scope, $http) {
         }
     }
     
-    
    function clear(){
          $scope.pics = [];
          $scope.have = [];
          $scope.next ="";
    }
-    //1920x1080 -> 10
-    //1600x900 ->8
-    //1280x800, 1440x900 ->6
-   // 320x568
-   //----------------------------------//
-    
+   
    function getImagesbyTag () {    
         clear();
         var tag = "tags/" + $scope.input + "/media/recent?";
