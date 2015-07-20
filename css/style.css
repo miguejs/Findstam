@@ -140,53 +140,57 @@ figcaption {
     transition: opacity 0.4s;
     opacity: 0.60; }
   /* line 118, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+  figcaption:active {
+    transition: opacity 0.4s;
+    opacity: 0.60; }
+  /* line 121, C:/Users/migue/Proyectos/Findstam/css/style.sass */
   figcaption a {
     text-decoration: none;
     color: white;
     padding: 10px;
     transition: transform 0.4s; }
-    /* line 123, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+    /* line 126, C:/Users/migue/Proyectos/Findstam/css/style.sass */
     figcaption a:hover {
       transform: translateY(-10px);
       color: #936357; }
-  /* line 126, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+  /* line 129, C:/Users/migue/Proyectos/Findstam/css/style.sass */
   figcaption p {
     text-align: center; }
 
-/* line 128, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+/* line 131, C:/Users/migue/Proyectos/Findstam/css/style.sass */
 .metadata {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
 
-/* line 132, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+/* line 135, C:/Users/migue/Proyectos/Findstam/css/style.sass */
 .more {
   display: flex;
   align-content: center;
   justify-content: center; }
-  /* line 136, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+  /* line 139, C:/Users/migue/Proyectos/Findstam/css/style.sass */
   .more a {
     color: #936357;
     font-size: 2.9em;
     text-decoration: none;
     transition: transform 0.4s;
     padding: 5px; }
-    /* line 142, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+    /* line 145, C:/Users/migue/Proyectos/Findstam/css/style.sass */
     .more a:hover {
       transform: translateY(-8px);
       color: white; }
 
-/* line 145, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+/* line 148, C:/Users/migue/Proyectos/Findstam/css/style.sass */
 #up {
   margin-left: 80%; }
 
-/* line 149, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+/* line 150, C:/Users/migue/Proyectos/Findstam/css/style.sass */
 .params {
   display: flex;
   justify-content: flex-start;
   color: #936357;
   margin-left: 15%; }
-  /* line 154, C:/Users/migue/Proyectos/Findstam/css/style.sass */
+  /* line 155, C:/Users/migue/Proyectos/Findstam/css/style.sass */
   .params select {
     color: #936357;
     width: 45px; }
